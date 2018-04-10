@@ -15072,8 +15072,6 @@ molded</description>
 <part name="T1" library="transistor" deviceset="BC547" device=""/>
 <part name="R8" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0207/10" package3d_urn="urn:adsk.eagle:package:25939/1" value="8.1k"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
-<part name="P+2" library="supply1" deviceset="VCC" device=""/>
-<part name="P+3" library="supply1" deviceset="VCC" device=""/>
 <part name="U1" library="esp8266modules" deviceset="ESP12" device="SMD"/>
 <part name="IC1" library="lm2575" deviceset="LM2575-3.3" device="T" value="LM2575-3.3T"/>
 <part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-EU" device="E5-4" package3d_urn="urn:adsk.eagle:package:23370/1" value="47uF"/>
@@ -15100,8 +15098,6 @@ molded</description>
 <instance part="T1" gate="G$1" x="149.86" y="40.64"/>
 <instance part="R8" gate="G$1" x="139.7" y="40.64" rot="R180"/>
 <instance part="GND2" gate="1" x="5.08" y="0"/>
-<instance part="P+2" gate="VCC" x="5.08" y="91.44"/>
-<instance part="P+3" gate="VCC" x="172.72" y="91.44"/>
 <instance part="U1" gate="G$1" x="106.68" y="55.88"/>
 <instance part="IC1" gate="A" x="25.4" y="45.72"/>
 <instance part="C1" gate="G$1" x="5.08" y="27.94"/>
@@ -15117,8 +15113,8 @@ molded</description>
 <instance part="X2" gate="-1" x="76.2" y="55.88"/>
 <instance part="X2" gate="-2" x="76.2" y="50.8"/>
 <instance part="X2" gate="-3" x="177.8" y="81.28" rot="R270"/>
-<instance part="X2" gate="-4" x="172.72" y="78.74" smashed="yes" rot="R90">
-<attribute name="NAME" x="171.831" y="78.74" size="1.778" layer="95" rot="R270"/>
+<instance part="X2" gate="-4" x="-7.62" y="50.8" smashed="yes">
+<attribute name="NAME" x="-7.62" y="51.689" size="1.778" layer="95" rot="R180"/>
 </instance>
 <instance part="X2" gate="-5" x="190.5" y="5.08" rot="R180"/>
 <instance part="X2" gate="-6" x="190.5" y="0" rot="R180"/>
@@ -15212,22 +15208,6 @@ molded</description>
 <junction x="152.4" y="73.66"/>
 </segment>
 <segment>
-<pinref part="P+2" gate="VCC" pin="VCC"/>
-<wire x1="5.08" y1="88.9" x2="5.08" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="A" pin="VIN"/>
-<wire x1="15.24" y1="50.8" x2="5.08" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="C1" gate="G$1" pin="+"/>
-<wire x1="5.08" y1="30.48" x2="5.08" y2="50.8" width="0.1524" layer="91"/>
-<junction x="5.08" y="50.8"/>
-</segment>
-<segment>
-<pinref part="P+3" gate="VCC" pin="VCC"/>
-<pinref part="X2" gate="-4" pin="KL"/>
-<wire x1="172.72" y1="88.9" x2="172.72" y2="83.82" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="86.36" y1="78.74" x2="86.36" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="81.28" y1="83.82" x2="86.36" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="83.82" x2="127" y2="83.82" width="0.1524" layer="91"/>
@@ -15251,6 +15231,9 @@ molded</description>
 <wire x1="142.24" y1="73.66" x2="142.24" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="83.82" x2="134.62" y2="83.82" width="0.1524" layer="91"/>
 <junction x="134.62" y="83.82"/>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="86.36" y1="78.74" x2="86.36" y2="83.82" width="0.1524" layer="91"/>
+<junction x="86.36" y="83.82"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -15366,6 +15349,17 @@ molded</description>
 <pinref part="R5" gate="G$1" pin="1"/>
 <wire x1="121.92" y1="50.8" x2="142.24" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="50.8" x2="142.24" y2="63.5" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="VIN" class="0">
+<segment>
+<pinref part="IC1" gate="A" pin="VIN"/>
+<wire x1="15.24" y1="50.8" x2="5.08" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="C1" gate="G$1" pin="+"/>
+<wire x1="5.08" y1="30.48" x2="5.08" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="X2" gate="-4" pin="KL"/>
+<wire x1="-2.54" y1="50.8" x2="5.08" y2="50.8" width="0.1524" layer="91"/>
+<junction x="5.08" y="50.8"/>
 </segment>
 </net>
 </nets>
