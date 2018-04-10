@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.6.0">
+<eagle version="8.7.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -9,20 +9,20 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -31,8 +31,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -40,19 +40,19 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
-<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
-<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="yes" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="yes" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="yes" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -438,6 +438,50 @@ general purpose rectifier, 1 A</description>
 <smd name="GPIO15" x="8.1" y="-6.2" dx="3" dy="1.2" layer="1"/>
 <smd name="GND" x="8.1" y="-8.2" dx="3" dy="1.2" layer="1"/>
 </package>
+<package name="ESP12-SMD-POGO">
+<wire x1="7.9" y1="12.93" x2="7.9" y2="5.63" width="0.127" layer="21"/>
+<wire x1="7.9" y1="-11.07" x2="-8.1" y2="-11.07" width="0.127" layer="21"/>
+<wire x1="-8.1" y1="5.63" x2="-8.1" y2="12.93" width="0.127" layer="21"/>
+<wire x1="-8.1" y1="12.93" x2="7.9" y2="12.93" width="0.127" layer="21"/>
+<wire x1="-4.9" y1="7.33" x2="-4.9" y2="12.23" width="0.6096" layer="21"/>
+<wire x1="-4.9" y1="12.23" x2="-4" y2="12.23" width="0.6096" layer="21"/>
+<wire x1="-4" y1="12.23" x2="-4" y2="8.53" width="0.6096" layer="21"/>
+<wire x1="-4" y1="8.53" x2="-3" y2="8.53" width="0.6096" layer="21"/>
+<wire x1="-3" y1="8.53" x2="-3" y2="12.13" width="0.6096" layer="21"/>
+<wire x1="-3" y1="12.13" x2="-1.8" y2="12.13" width="0.6096" layer="21"/>
+<wire x1="-1.8" y1="12.13" x2="-1.8" y2="8.53" width="0.6096" layer="21"/>
+<wire x1="-1.8" y1="8.53" x2="-0.6" y2="8.53" width="0.6096" layer="21"/>
+<wire x1="-0.6" y1="8.53" x2="-0.6" y2="12.13" width="0.6096" layer="21"/>
+<wire x1="-0.6" y1="12.13" x2="0.5" y2="12.13" width="0.6096" layer="21"/>
+<wire x1="0.5" y1="12.13" x2="0.5" y2="8.63" width="0.6096" layer="21"/>
+<wire x1="0.5" y1="8.63" x2="1.6" y2="8.63" width="0.6096" layer="21"/>
+<wire x1="1.6" y1="8.63" x2="1.6" y2="12.13" width="0.6096" layer="21"/>
+<wire x1="1.6" y1="12.13" x2="5.6" y2="12.13" width="0.6096" layer="21"/>
+<wire x1="-4.9" y1="7.23" x2="-4.9" y2="6.63" width="0.6096" layer="21"/>
+<wire x1="-4.9" y1="6.63" x2="1.6" y2="6.63" width="0.6096" layer="21"/>
+<text x="0" y="1.73" size="1.4224" layer="21" align="bottom-center">ESP - 12</text>
+<text x="-7.7" y="13.83" size="1.4224" layer="25">&gt;Name</text>
+<smd name="RESET" x="-8.3" y="4.53" dx="3" dy="1.2" layer="1"/>
+<smd name="ADC" x="-8.3" y="2.53" dx="3" dy="1.2" layer="1"/>
+<smd name="CH_PD" x="-8.3" y="0.53" dx="3" dy="1.2" layer="1"/>
+<smd name="GPIO16" x="-8.3" y="-1.47" dx="3" dy="1.2" layer="1"/>
+<smd name="GPIO14" x="-8.3" y="-3.47" dx="3" dy="1.2" layer="1"/>
+<smd name="GPIO12" x="-8.3" y="-5.47" dx="3" dy="1.2" layer="1"/>
+<smd name="GPIO13" x="-8.3" y="-7.47" dx="3" dy="1.2" layer="1"/>
+<smd name="VCC" x="-8.3" y="-9.47" dx="3" dy="1.2" layer="1"/>
+<smd name="TXD0" x="8.1" y="4.53" dx="3" dy="1.2" layer="1"/>
+<smd name="RXD0" x="8.1" y="2.53" dx="3" dy="1.2" layer="1"/>
+<smd name="GPIO4" x="8.1" y="0.53" dx="3" dy="1.2" layer="1"/>
+<smd name="GPIO5" x="8.1" y="-1.47" dx="3" dy="1.2" layer="1"/>
+<smd name="GPIO0" x="8.1" y="-3.47" dx="3" dy="1.2" layer="1"/>
+<smd name="GPIO2" x="8.1" y="-5.47" dx="3" dy="1.2" layer="1"/>
+<smd name="GPIO15" x="8.1" y="-7.47" dx="3" dy="1.2" layer="1"/>
+<smd name="GND" x="8.1" y="-9.47" dx="3" dy="1.2" layer="1"/>
+<hole x="-10.16" y="7.62" drill="3"/>
+<hole x="10.16" y="7.62" drill="3"/>
+<hole x="-10.16" y="-12.7" drill="3"/>
+<hole x="10.16" y="-12.7" drill="3"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ESP12">
@@ -496,6 +540,29 @@ general purpose rectifier, 1 A</description>
 </technologies>
 </device>
 <device name="SMD" package="ESP12-SMD">
+<connects>
+<connect gate="G$1" pin="ADC" pad="ADC"/>
+<connect gate="G$1" pin="CH_PD" pad="CH_PD"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="GPIO0" pad="GPIO0"/>
+<connect gate="G$1" pin="GPIO12" pad="GPIO12"/>
+<connect gate="G$1" pin="GPIO13" pad="GPIO13"/>
+<connect gate="G$1" pin="GPIO14" pad="GPIO14"/>
+<connect gate="G$1" pin="GPIO15" pad="GPIO15"/>
+<connect gate="G$1" pin="GPIO16" pad="GPIO16"/>
+<connect gate="G$1" pin="GPIO2" pad="GPIO2"/>
+<connect gate="G$1" pin="GPIO4" pad="GPIO4"/>
+<connect gate="G$1" pin="GPIO5" pad="GPIO5"/>
+<connect gate="G$1" pin="RESET" pad="RESET"/>
+<connect gate="G$1" pin="RX" pad="RXD0"/>
+<connect gate="G$1" pin="TX" pad="TXD0"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="ESP12-SMD-POGO" package="ESP12-SMD-POGO">
 <connects>
 <connect gate="G$1" pin="ADC" pad="ADC"/>
 <connect gate="G$1" pin="CH_PD" pad="CH_PD"/>
@@ -15070,23 +15137,23 @@ molded</description>
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
 <part name="D1" library="diode" deviceset="1N4004" device=""/>
 <part name="T1" library="transistor" deviceset="BC547" device=""/>
-<part name="R8" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0207/10" package3d_urn="urn:adsk.eagle:package:25939/1" value="8.1k"/>
+<part name="R8" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0204/7" package3d_urn="urn:adsk.eagle:package:25945/1" value="8.1k"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
-<part name="U1" library="esp8266modules" deviceset="ESP12" device="SMD"/>
+<part name="U1" library="esp8266modules" deviceset="ESP12" device="ESP12-SMD-POGO" value="ESP8266"/>
 <part name="IC1" library="lm2575" deviceset="LM2575-3.3" device="T" value="LM2575-3.3T"/>
 <part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-EU" device="E5-4" package3d_urn="urn:adsk.eagle:package:23370/1" value="47uF"/>
 <part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-EU" device="E5-8.5" package3d_urn="urn:adsk.eagle:package:23374/1" value="220uF"/>
 <part name="D2" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N581*" device="" package3d_urn="urn:adsk.eagle:package:43421/1" technology="9-T"/>
 <part name="L1" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="L" device="0207/10" package3d_urn="urn:adsk.eagle:package:13275/1" value="220uH"/>
 <part name="P+4" library="supply1" deviceset="VCC" device=""/>
-<part name="R1" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0207/10" package3d_urn="urn:adsk.eagle:package:25939/1" value="3k3"/>
-<part name="R2" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0207/10" package3d_urn="urn:adsk.eagle:package:25939/1" value="3k3"/>
-<part name="R3" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0207/10" package3d_urn="urn:adsk.eagle:package:25939/1" value="3k3"/>
+<part name="R1" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0204/7" package3d_urn="urn:adsk.eagle:package:25945/1" value="3k3"/>
+<part name="R2" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0204/7" package3d_urn="urn:adsk.eagle:package:25945/1" value="3k3"/>
+<part name="R3" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0204/7" package3d_urn="urn:adsk.eagle:package:25945/1" value="3k3"/>
 <part name="K1" library="relay" library_urn="urn:adsk.eagle:library:339" deviceset="RR1A" device="" package3d_urn="urn:adsk.eagle:package:24316/1"/>
 <part name="X2" library="con-wago-500" library_urn="urn:adsk.eagle:library:195" deviceset="W237-6" device="" package3d_urn="urn:adsk.eagle:package:10696/1" value="Connector"/>
-<part name="S1" library="switch-omron" library_urn="urn:adsk.eagle:library:377" deviceset="10-XX" device="" package3d_urn="urn:adsk.eagle:package:27496/1"/>
-<part name="R4" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0207/10" package3d_urn="urn:adsk.eagle:package:25939/1" value="3k3"/>
-<part name="R5" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0207/10" package3d_urn="urn:adsk.eagle:package:25939/1" value="3k3"/>
+<part name="S1" library="switch-omron" library_urn="urn:adsk.eagle:library:377" deviceset="10-XX" device="" package3d_urn="urn:adsk.eagle:package:27496/1" value="Config"/>
+<part name="R4" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0204/7" package3d_urn="urn:adsk.eagle:package:25945/1" value="3k3"/>
+<part name="R5" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0204/7" package3d_urn="urn:adsk.eagle:package:25945/1" value="3k3"/>
 </parts>
 <sheets>
 <sheet>
