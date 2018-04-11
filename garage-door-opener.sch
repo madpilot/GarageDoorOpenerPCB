@@ -15163,6 +15163,7 @@ molded</description>
 <part name="S1" library="switch-omron" library_urn="urn:adsk.eagle:library:377" deviceset="10-XX" device="" package3d_urn="urn:adsk.eagle:package:27496/1" value="Config"/>
 <part name="R4" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0204/7" package3d_urn="urn:adsk.eagle:package:25945/1" value="3k3"/>
 <part name="R5" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0204/7" package3d_urn="urn:adsk.eagle:package:25945/1" value="3k3"/>
+<part name="P+2" library="supply1" deviceset="VCC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -15186,8 +15187,8 @@ molded</description>
 <instance part="R3" gate="G$1" x="132.08" y="22.86" rot="R90"/>
 <instance part="K1" gate="1" x="162.56" y="60.96"/>
 <instance part="K1" gate="2" x="177.8" y="60.96"/>
-<instance part="X2" gate="-1" x="76.2" y="55.88"/>
-<instance part="X2" gate="-2" x="76.2" y="50.8"/>
+<instance part="X2" gate="-1" x="73.66" y="55.88"/>
+<instance part="X2" gate="-2" x="73.66" y="50.8"/>
 <instance part="X2" gate="-3" x="177.8" y="81.28" rot="R270"/>
 <instance part="X2" gate="-4" x="-7.62" y="50.8" smashed="yes">
 <attribute name="NAME" x="-7.62" y="51.689" size="1.778" layer="95" rot="R180"/>
@@ -15197,6 +15198,7 @@ molded</description>
 <instance part="S1" gate="1" x="106.68" y="25.4" rot="R270"/>
 <instance part="R4" gate="G$1" x="83.82" y="15.24" rot="R90"/>
 <instance part="R5" gate="G$1" x="142.24" y="68.58" rot="R90"/>
+<instance part="P+2" gate="VCC" x="66.04" y="91.44"/>
 </instances>
 <busses>
 </busses>
@@ -15310,13 +15312,13 @@ molded</description>
 <pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="86.36" y1="78.74" x2="86.36" y2="83.82" width="0.1524" layer="91"/>
 <junction x="86.36" y="83.82"/>
-</segment>
-</net>
-<net name="N$4" class="0">
-<segment>
 <pinref part="U1" gate="G$1" pin="VCC"/>
+<wire x1="88.9" y1="45.72" x2="81.28" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="45.72" x2="81.28" y2="58.42" width="0.1524" layer="91"/>
+<junction x="81.28" y="58.42"/>
+</segment>
+<segment>
 <pinref part="C2" gate="G$1" pin="+"/>
-<wire x1="66.04" y1="45.72" x2="88.9" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="30.48" x2="66.04" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="L1" gate="G$1" pin="1"/>
 <wire x1="60.96" y1="45.72" x2="66.04" y2="45.72" width="0.1524" layer="91"/>
@@ -15324,6 +15326,9 @@ molded</description>
 <pinref part="IC1" gate="A" pin="FB"/>
 <wire x1="66.04" y1="45.72" x2="66.04" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="50.8" x2="38.1" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="P+2" gate="VCC" pin="VCC"/>
+<wire x1="66.04" y1="88.9" x2="66.04" y2="50.8" width="0.1524" layer="91"/>
+<junction x="66.04" y="50.8"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -15385,15 +15390,15 @@ molded</description>
 <segment>
 <pinref part="X2" gate="-2" pin="KL"/>
 <pinref part="U1" gate="G$1" pin="GPIO12"/>
-<wire x1="81.28" y1="50.8" x2="88.9" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="50.8" x2="88.9" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$11" class="0">
 <segment>
 <pinref part="X2" gate="-1" pin="KL"/>
 <pinref part="U1" gate="G$1" pin="GPIO14"/>
-<wire x1="81.28" y1="55.88" x2="81.28" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="53.34" x2="88.9" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="55.88" x2="78.74" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="53.34" x2="88.9" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$12" class="0">
