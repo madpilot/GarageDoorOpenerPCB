@@ -3103,9 +3103,12 @@ design rules under a new name.</description>
 <attribute name="SPICEMODEL" value="NONE" x="22.86" y="74.93" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="SPICEPREFIX" value="L" x="22.86" y="74.93" size="0.6096" layer="27" rot="R90" display="off"/>
 </element>
-<element name="R1" library="resistor" library_urn="urn:adsk.eagle:library:348" package="0204/7" package3d_urn="urn:adsk.eagle:package:25945/1" value="3k3" x="34.29" y="52.07"/>
-<element name="R2" library="resistor" library_urn="urn:adsk.eagle:library:348" package="0204/7" package3d_urn="urn:adsk.eagle:package:25945/1" value="3k3" x="34.29" y="48.26"/>
-<element name="R3" library="resistor" library_urn="urn:adsk.eagle:library:348" package="0204/7" package3d_urn="urn:adsk.eagle:package:25945/1" value="3k3" x="34.29" y="59.69" rot="R180"/>
+<element name="R1" library="resistor" library_urn="urn:adsk.eagle:library:348" package="0204/7" package3d_urn="urn:adsk.eagle:package:25945/1" value="3k3" x="33.02" y="52.07"/>
+<element name="R2" library="resistor" library_urn="urn:adsk.eagle:library:348" package="0204/7" package3d_urn="urn:adsk.eagle:package:25945/1" value="3k3" x="33.02" y="48.26"/>
+<element name="R3" library="resistor" library_urn="urn:adsk.eagle:library:348" package="0204/7" package3d_urn="urn:adsk.eagle:package:25945/1" value="3k3" x="33.02" y="59.69" smashed="yes" rot="R180">
+<attribute name="NAME" x="30.48" y="60.9346" size="0.9906" layer="25" ratio="10" rot="R180" align="top-right"/>
+<attribute name="VALUE" x="34.6456" y="60.1726" size="0.9906" layer="27" ratio="10" rot="R180"/>
+</element>
 <element name="K1" library="relay" library_urn="urn:adsk.eagle:library:339" package="RR1A" package3d_urn="urn:adsk.eagle:package:24316/1" value="RR1A" x="33.02" y="72.39" rot="R90">
 <attribute name="MF" value="" x="33.02" y="72.39" size="0.6096" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="" x="33.02" y="72.39" size="0.6096" layer="27" rot="R90" display="off"/>
@@ -3124,8 +3127,14 @@ design rules under a new name.</description>
 <attribute name="OC_FARNELL" value="176432" x="43.18" y="46.99" size="0.6096" layer="27" rot="R90" display="off"/>
 <attribute name="OC_NEWARK" value="36M3542" x="43.18" y="46.99" size="0.6096" layer="27" rot="R90" display="off"/>
 </element>
-<element name="R4" library="resistor" library_urn="urn:adsk.eagle:library:348" package="0204/7" package3d_urn="urn:adsk.eagle:package:25945/1" value="3k3" x="34.29" y="44.45" rot="R180"/>
-<element name="R5" library="resistor" library_urn="urn:adsk.eagle:library:348" package="0204/7" package3d_urn="urn:adsk.eagle:package:25945/1" value="3k3" x="34.29" y="55.88"/>
+<element name="R4" library="resistor" library_urn="urn:adsk.eagle:library:348" package="0204/7" package3d_urn="urn:adsk.eagle:package:25945/1" value="3k3" x="33.02" y="44.45" smashed="yes" rot="R180">
+<attribute name="NAME" x="30.48" y="45.6946" size="0.9906" layer="25" ratio="10" rot="R180" align="top-right"/>
+<attribute name="VALUE" x="34.6456" y="44.9326" size="0.9906" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="R5" library="resistor" library_urn="urn:adsk.eagle:library:348" package="0204/7" package3d_urn="urn:adsk.eagle:package:25945/1" value="3k3" x="33.02" y="55.88" smashed="yes">
+<attribute name="NAME" x="30.48" y="57.1754" size="0.9906" layer="25" ratio="10"/>
+<attribute name="VALUE" x="31.3944" y="55.3974" size="0.9906" layer="27" ratio="10"/>
+</element>
 </elements>
 <signals>
 <signal name="N$1">
@@ -3176,8 +3185,8 @@ design rules under a new name.</description>
 <wire x1="11.43" y1="69.85" x2="15.24" y2="69.85" width="0.762" layer="16"/>
 <wire x1="15.24" y1="69.85" x2="17.78" y2="67.31" width="0.762" layer="16"/>
 <wire x1="17.78" y1="67.31" x2="22.86" y2="67.31" width="0.762" layer="16"/>
-<wire x1="38.1" y1="59.69" x2="43.18" y2="59.69" width="0.762" layer="1"/>
-<wire x1="38.1" y1="44.45" x2="40.64" y2="46.99" width="0.762" layer="1"/>
+<wire x1="36.83" y1="59.69" x2="43.18" y2="59.69" width="0.762" layer="1"/>
+<wire x1="36.83" y1="44.45" x2="40.64" y2="46.99" width="0.762" layer="1"/>
 <wire x1="40.64" y1="46.99" x2="41.91" y2="46.99" width="0.762" layer="1"/>
 <wire x1="41.91" y1="46.99" x2="43.18" y2="48.26" width="0.762" layer="1"/>
 <wire x1="43.18" y1="48.26" x2="43.18" y2="54.81" width="0.762" layer="1"/>
@@ -3208,10 +3217,10 @@ design rules under a new name.</description>
 <contactref element="U1" pad="CH_PD"/>
 <contactref element="R5" pad="2"/>
 <wire x1="40.9194" y1="46.99" x2="40.9194" y2="43.7388" width="0.762" layer="16"/>
-<wire x1="38.1" y1="55.88" x2="38.1" y2="52.07" width="0.762" layer="16"/>
-<wire x1="38.1" y1="52.07" x2="39.9288" y2="50.2412" width="0.762" layer="16"/>
+<wire x1="36.83" y1="55.88" x2="36.83" y2="52.07" width="0.762" layer="16"/>
+<wire x1="36.83" y1="52.07" x2="39.9288" y2="50.2412" width="0.762" layer="16"/>
 <wire x1="39.9288" y1="50.2412" x2="40.9194" y2="50.2412" width="0.762" layer="16"/>
-<wire x1="38.1" y1="55.88" x2="39.37" y2="55.88" width="0.762" layer="16"/>
+<wire x1="36.83" y1="55.88" x2="39.37" y2="55.88" width="0.762" layer="16"/>
 <wire x1="40.68" y1="57.19" x2="40.68" y2="64.81" width="0.762" layer="16"/>
 <wire x1="39.37" y1="55.88" x2="40.68" y2="57.19" width="0.762" layer="16"/>
 <wire x1="24.13" y1="49.53" x2="26.67" y2="46.99" width="0.762" layer="1"/>
@@ -3222,7 +3231,7 @@ design rules under a new name.</description>
 <wire x1="26.67" y1="46.99" x2="33.02" y2="46.99" width="0.762" layer="1"/>
 <via x="33.02" y="46.99" extent="1-16" drill="0.508"/>
 <wire x1="33.02" y1="46.99" x2="40.9194" y2="46.99" width="0.762" layer="16"/>
-<wire x1="38.1" y1="48.26" x2="39.9288" y2="50.0888" width="0.762" layer="16"/>
+<wire x1="36.83" y1="48.26" x2="39.9288" y2="50.0888" width="0.762" layer="16"/>
 <wire x1="39.9288" y1="50.0888" x2="39.9288" y2="50.2412" width="0.762" layer="16"/>
 </signal>
 <signal name="N$4">
@@ -3263,9 +3272,8 @@ design rules under a new name.</description>
 <signal name="N$7">
 <contactref element="U1" pad="GPIO0"/>
 <contactref element="R1" pad="1"/>
-<wire x1="30.48" y1="52.07" x2="30.48" y2="53.34" width="0.762" layer="1"/>
-<wire x1="30.48" y1="53.34" x2="29.21" y2="54.61" width="0.762" layer="1"/>
-<wire x1="29.21" y1="54.61" x2="19.05" y2="54.61" width="0.762" layer="1"/>
+<wire x1="29.21" y1="52.07" x2="26.67" y2="54.61" width="0.762" layer="1"/>
+<wire x1="26.67" y1="54.61" x2="19.05" y2="54.61" width="0.762" layer="1"/>
 <wire x1="19.05" y1="54.61" x2="19.05" y2="59.83" width="0.762" layer="1"/>
 <wire x1="19.05" y1="59.83" x2="18.71" y2="60.17" width="0.762" layer="1"/>
 </signal>
@@ -3276,8 +3284,8 @@ design rules under a new name.</description>
 <wire x1="10.75" y1="43.77" x2="10.795" y2="44.45" width="0.762" layer="1"/>
 <wire x1="10.795" y1="44.45" x2="10.795" y2="48.895" width="0.762" layer="1"/>
 <wire x1="10.795" y1="48.895" x2="12.7" y2="50.8" width="0.762" layer="1"/>
-<wire x1="12.7" y1="50.8" x2="27.94" y2="50.8" width="0.762" layer="1"/>
-<wire x1="27.94" y1="50.8" x2="30.48" y2="48.26" width="0.762" layer="1"/>
+<wire x1="12.7" y1="50.8" x2="26.67" y2="50.8" width="0.762" layer="1"/>
+<wire x1="26.67" y1="50.8" x2="29.21" y2="48.26" width="0.762" layer="1"/>
 </signal>
 <signal name="N$9">
 <contactref element="U1" pad="GPIO13"/>
@@ -3334,25 +3342,25 @@ design rules under a new name.</description>
 <wire x1="16.51" y1="40.64" x2="16.51" y2="43.57" width="0.762" layer="1"/>
 <wire x1="16.51" y1="43.57" x2="16.71" y2="43.77" width="0.762" layer="1"/>
 <wire x1="45.4406" y1="50.2412" x2="45.4406" y2="43.7388" width="0.762" layer="16"/>
-<wire x1="30.48" y1="44.45" x2="35.56" y2="44.45" width="0.762" layer="16"/>
-<wire x1="35.56" y1="44.45" x2="39.37" y2="40.64" width="0.762" layer="16"/>
-<wire x1="39.37" y1="40.64" x2="44.45" y2="40.64" width="0.762" layer="16"/>
+<wire x1="29.21" y1="44.45" x2="34.29" y2="44.45" width="0.762" layer="16"/>
+<wire x1="34.29" y1="44.45" x2="38.1" y2="40.64" width="0.762" layer="16"/>
+<wire x1="38.1" y1="40.64" x2="44.45" y2="40.64" width="0.762" layer="16"/>
 <wire x1="17.78" y1="44.45" x2="16.51" y2="43.18" width="0.762" layer="16"/>
 <wire x1="16.51" y1="43.18" x2="16.51" y2="40.64" width="0.762" layer="16"/>
-<wire x1="30.48" y1="44.45" x2="17.78" y2="44.45" width="0.762" layer="16"/>
+<wire x1="29.21" y1="44.45" x2="17.78" y2="44.45" width="0.762" layer="16"/>
 </signal>
 <signal name="N$6">
 <contactref element="U1" pad="GPIO15"/>
 <contactref element="R3" pad="2"/>
-<wire x1="30.48" y1="59.69" x2="27.94" y2="57.15" width="0.762" layer="1"/>
+<wire x1="29.21" y1="59.69" x2="26.67" y2="57.15" width="0.762" layer="1"/>
 <wire x1="22.86" y1="57.15" x2="22.71" y2="57.3" width="0.762" layer="1"/>
 <wire x1="22.71" y1="57.3" x2="22.71" y2="60.17" width="0.762" layer="1"/>
-<wire x1="27.94" y1="57.15" x2="22.86" y2="57.15" width="0.762" layer="1"/>
+<wire x1="26.67" y1="57.15" x2="22.86" y2="57.15" width="0.762" layer="1"/>
 </signal>
 <signal name="N$13">
 <contactref element="U1" pad="GPIO2"/>
 <contactref element="R5" pad="1"/>
-<wire x1="30.48" y1="55.88" x2="20.955" y2="55.88" width="0.762" layer="1"/>
+<wire x1="29.21" y1="55.88" x2="20.955" y2="55.88" width="0.762" layer="1"/>
 <wire x1="20.955" y1="59.78" x2="20.71" y2="60.17" width="0.762" layer="1"/>
 <wire x1="20.955" y1="55.88" x2="20.955" y2="59.78" width="0.762" layer="1"/>
 </signal>
