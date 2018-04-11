@@ -153,7 +153,7 @@
 <text x="50.8" y="69.85" size="0.8128" layer="21" font="vector" ratio="5" align="center">SWITCH</text>
 <text x="17.78" y="38.1" size="1.2192" layer="21" font="vector" ratio="5" align="center">Garage Door Opener v2.0</text>
 <text x="51.435" y="47.625" size="1.27" layer="21" font="vector" ratio="5" rot="R90" align="center">@madpilot</text>
-<hole x="3.175" y="41.275" drill="3.2"/>
+<hole x="3.175" y="40.005" drill="3.2"/>
 <hole x="3.175" y="64.135" drill="3.2"/>
 <hole x="51.435" y="40.005" drill="3.2"/>
 <hole x="51.435" y="77.47" drill="3.2"/>
